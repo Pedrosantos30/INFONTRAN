@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/GraficoFrontEnd/style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
     <title>Detran</title>
   </head>
   <body>
-     <div class="px-4 py5 my-5 text-center">
+     <div class="px-4 py5 my-5">
          <img class="d-block mx-auto mb-4" src="https://seeklogo.com/images/D/detran-pe-logo-C2D5D6B963-seeklogo.com.png" alt="" width="150" height="150">
          <div class="col-lg-6 mx-auto">
             <p class="lead mb-4"> A análise gráfica dos dados do Detran oferece insights valiosos sobre os acidentes, ajudando a compreender padrões e riscos nas estradas..</p>
@@ -23,7 +23,7 @@
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
           
           <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="pills-DataSet-tab" data-bs-toggle="pill" data-bs-target="#pills-DataSet" type="button" role="tab" aria-controls="pills-DataSet" aria-selected="true">DataSet</button>
+            <button class="nav-link" id="pills-DataSet-tab" data-bs-toggle="pill" data-bs-target="#pills-DataSet" type="button" role="tab" aria-controls="pills-DataSet" aria-selected="true">DataSet</button>
           </li>
           <li class="nav-item" role="presentation">
             <button class="nav-link" id="pills-severidade-tab" data-bs-toggle="pill" data-bs-target="#pills-severidade" type="button" role="tab" aria-controls="pills-severidade" aria-selected="false">Visualização dos Dados</button>
@@ -36,48 +36,92 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show" id="pills-DataSet" role="tabpanel" aria-labelledby="pills-DataSet-tab">
-            <div class="d-flexd">
+            <div class="d-flexd justify-content-start">
+
+          
+    
+            <main>
+                <section class="grid01">
+                   
+                    <div class="sobreabase">
+                        <h2>Sobre a base de dados</h2>
+                        <p>Esta base de dados contém informações sobre acidentes de trânsitos registrados em 2020 pelo Departamento Estadual de Trânsito. A mesma inclui uma variedades de informações relacionadas aos acidentes, como tipo de veículos envolvidos e gravidade dos acidentes tornando assim esses dados valiosos para nossa análise, podendo nos ajudar a entender melhor seus padrões.</p>
+                    </div>
+        
+                    <h3><strong>A base contém <br>
+                    18 variaveis, <br>
+                    sendo 9 numéricas e 5 categóricas</strong></h3>
+                   
+                </section>
+            
+            <section class="grid02">
+        
+                <div class="infodabase">
+                    <h2 >Em andamento... <br>
+                    <span>DETRAN</span></h2>
+                </div>
+        
+                <div class="des">
+                    <h2>Em andamento</h2>
+                </div>
+        
+                <div class="tags">
+                    <h2>Em Andamento <br>
+                    </h2>
+                </div>
+        
+            </section>
+        
+           
+            
+            </main>
+              
+            
                      
       
             </div>
         </div>
 
           <div class="tab-pane fade show" id="pills-severidade" role="tabpanel" aria-labelledby="pills-severidade-tab">
-            <div class="d-flex">
-              <img src="/GraficoFrontEnd/graficosBarra/Cinto de segurança e severidade.png" width="800" height="550">
-              <p>Os dados sugerem que o uso do cinto de segurança está associado a uma maior 
-                 prevalência de casos não fatais e sem ferimentos entre os envolvidos que utilizaram
-                 o cinto de segurança. Isso ressalta a importância do uso do cinto de segurança como 
-                 medida eficaz na prevenção de lesões graves em acidentes de trânsito</p>
-            </div>
+            <div class="d-flex flex-column justify-content-center">
+              <!-- <div class="graficos"> -->
+              <img src="/graficos/graficosBarra/quantidade e severidade.png" width="650" height="550">
+             
+              
+              
+          
+            
+              <img src="/graficos/graficosBarra/Cinto e severidade.png" width="650" height="550">
+              
+          
+            
+              <img src="/graficos/graficosBarra/condutor e severidade.png" width="650" height="550">
+            
 
-            <div class="d-flex">
-              <img src="/GraficoFrontEnd/BoxPlot/Idade e severidade.png" width="900" height="550">
-              <p>Os dados revelam uma possível associação entre gênero e fatalidade em acidentes, indicando que 
-                homens têm uma taxa de fatalidade mais elevada
-              </p>
-            </div>
+            
+              <img src="/graficos/graficosBarra/Embreagues e severiade.png" width="650" height="550">
+             
 
-            <div class="d-flex">
-              <img src="/GraficoFrontEnd/histograma/histograma.png" width="800" height="550">
-              <p>Os dados revelam uma possível associação entre gênero e fatalidade em acidentes, indicando que 
-                homens têm uma taxa de fatalidade mais elevada
-              </p>
-            </div>
-
-            <div class="d-flex">
-              <img src="/GraficoFrontEnd/scatterplot/scatterplot.png" width="800" height="550">
-              <p>Os dados revelam uma possível associação entre gênero e fatalidade em acidentes, indicando que 
-                homens têm uma taxa de fatalidade mais elevada
-              </p>
-            </div>
+            
+              <img src="/graficos/graficosBarra/quantidade e severidade.png" width="650" height="550">
 
 
-            <div class="d-flex">
-              <img src="/GraficoFrontEnd/heatmap/correlacao das variaveis.png" width="800" height="550">
-              <p>Os dados revelam uma possível associação entre gênero e fatalidade em acidentes, indicando que 
-                homens têm uma taxa de fatalidade mais elevada
-              </p>
+              <img src="/graficos/graficosBarra/severidade por sexo.png" width="650" height="550">
+
+
+              <img class="histo" src="/histograma/Envolvidos e Idade.png" width="650" height="550">
+
+              <img src="/BoxPlot/Idade severiade.png" width="650" height="550">
+
+              <img src="/violinplot/Idade e severiade violin.png" width="650" height="550">
+
+              <img src="/scatterplot/Envolvidos e Idade - severidade.png" width="650" height="550">
+
+              <img src="/heatmap/correlacao.png" width="650" height="550">
+
+              <img src="/linha/tendencias.png" width="650" height="550">
+            <!-- </div> -->
+              
             </div>
             
           </div>
@@ -90,32 +134,32 @@
                 <form action="/" method="post">
 
                   <label for="age">Idade:</label>
-                  <input type="text" id="size" name="age" required><br><br>
+                  <input type="text" id="age" name="age" required><br><br>
 
                   <label for="age">Nº_envolvido:</label>
-                  <input type="number" id="size" name="age" required><br><br>
+                  <input type="number" id="num_envolvido" name="num_envolvido" required><br><br>
 
-                    <label for="color">Embriaguez:</label>
-                    <select name="likes_studying" id="likes_studying" required>
+                    <label for="embreagues">Embreagues:</label>
+                    <select name="embriagues" id="embreagues" required>
                       <option value="sim">Sim</option>
                       <option value="não">Não</option>
                   </select><br><br>
 
-                  <label for="color">condutor:</label>
-                  <select name="likes_studying" id="likes_studying" required>
+                  <label for="condutor">condutor:</label>
+                  <select name="condutor" id="condutor" required>
                     <option value="sim">Sim</option>
                     <option value="não">Não</option>
                 </select><br><br>
                   
                     <label for="security">cinto_seguranca:</label>
-                    <select name="likes_studying" id="likes_studying" required>
+                    <select name="cinto_seguranca" id="cinto_seguranca" required>
                       <option value="sim">Sim</option>
                       <option value="não">Não</option>
                   </select><br><br>
                    
 
-                  <label for="security">categoria_habilitacao:</label>
-                  <select name="likes_studying" id="likes_studying" required>
+                  <label for="categoria_habilitacao">categoria_habilitacao:</label>
+                  <select name="categoria_habilitacao" id="categoria_habilitacao" required>
                     <option value="A">A</option>
                     <option value="B">B</option>
                     <option value="C">C</option>
@@ -125,15 +169,15 @@
                     <option value="N">N</option>
                 </select><br><br>
 
-                <label for="security">especie_veiculo:</label>
-                    <select name="likes_studying" id="likes_studying" required>
+                <label for="especie_veiculo">especie_veiculo:</label>
+                    <select name="especie_veiculo" id="especie_veiculo" required>
                       <option value="CARRO">AUTOMOVEL</option>
                       <option value="MOTO">MOTOCICLETA</option>
                       <option value="BICICLETA">BICICLETA</option>
                   </select><br><br>
                    
-                  <label for="security">sexo:</label>
-                  <select name="likes_studying" id="likes_studying" required>
+                  <label for="sexo">sexo:</label>
+                  <select name="sexo" id="sexo" required>
                     <option value="FEMININO">F</option>
                     <option value="MASCULINO">M</option>
                 </select><br><br>
@@ -146,7 +190,7 @@
 
       <footer>
         <div class="footer-grid">
-          <div class="footer-item">Departamento Nacional de Trânsito</div>
+          <div class="footer-item">INFOTRAN</div>
         </div>
       </footer>
       

@@ -32,7 +32,6 @@ body {
 }
 
 
-
 .fw-bold {
     font-weight: 700 !important;
 }
@@ -57,13 +56,16 @@ body {
     font-size: calc(1.375rem + 1.5vw);
 }
 
-/* .b-example-divider {         /*background do conteudo principal
-  
- 
+.b-example-divider {       
+    height: 100vh;
+    padding-bottom: 50px;
+    background-color: #fff;
+    border-top: solid rgba(0, 0, 0, .15);
+    border-width: 2px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, 0), inset 0 .125em .5em rgba(0, 0, 0, 0);
+    
+} 
    
-} */
-
-
 
 .mb-3 {
     margin-bottom: 1rem !important;
@@ -86,8 +88,7 @@ ol, ul {
 }
 
 .tab-pane img{
-    margin-left: 100px;
-    margin-right: 100px;
+    
     margin-top: 50px;
 }
 
@@ -108,9 +109,33 @@ ol, ul {
 } */
 
 
+
+
+ .tab-pane img {
+    background: #d2d5da;
+    padding: 30px;
+   
+ }
+
+.tab-pane{
+    margin-bottom: px;
+} 
+ 
+.d-flex{
+    display: grid;
+    align-items: center;
+}
+
+
 footer {
+    /* background-color: #044494;
+    padding: 10px; */
+    position: relative;
+    bottom: 0;
+    width: 100%;
     background-color: #044494;
-    padding: 10px;
+    text-align: center;
+    padding: 10px 0;
   }
   
   
@@ -146,7 +171,7 @@ footer {
 }
  
 
- 
+
 
  .forms h1{
     color: #044494;
@@ -155,4 +180,122 @@ footer {
 
 
 
+ /* base de dados */
+
+
+ main{
+    width: 97vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.gridprincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+a{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 150px;
+}
+
+
+.grid01{
+    width: 100%;
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    
+}
+
+
+
+.sobreabase{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    border-radius: 20px;
+    height: 300px;
+    color: rgb(2, 2, 2);
+       
+}
+
+.sobreabase p{
+    margin: 30px;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 30px;
+    padding-top: 20px;
+    font-size: 24px;
+    margin-top: 5px
+}
+
+h3{
+    font-size: 10px;
+    color: rgb(2, 2, 2);
+    margin: 30px;
+}
+
+
+p{
+    text-align: justify;
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+.grid02{
+    width: 97vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  
+
+}
+
+
+.infodabase{
+    background-color: gray;
+    border-radius: 20px;
+    color: white;
+  
+}
+
+span{
+    color: rgb(8, 44, 154);
+}
+
+.des{
+    color: white;
+    background-color: gray;
+    border-radius: 20px;
+  
+   
+    
+}
+
+.tags{
+    color: white;
+    background-color: gray;
+   
+    
+
+}
+
+ .infobase, .des, .tags{
+    width: 100%;
+    height: 25rem;
  
+} 
+
+
+.d-flexd{
+    margin: 10px;
+}
